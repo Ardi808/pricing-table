@@ -1,0 +1,16 @@
+:root {
+  /* Warna dasar */
+  --color-primary: #1E40AF;      /* biru utama */
+  --color-secondary: #B97730;    /* oranye tombol popular */
+  --color-dark-bg: #0E1225;      /* background kolom popular */
+  --color-light-bg: #FFFFFF;     /* putih umum */
+  --color-muted-bg: #F9FAFB;     /* latar belakang lembut */
+
+  /* Teks & border */
+  --color-text: #1A1A1A;         /* teks utama */
+  --color-text-muted: #6B7280;   /* teks sekunder */
+  --color-border: #E5E7EB;       /* garis tabel */
+
+  /* Aksen */
+  --color-badge: #3B82F6;        /* label popular */
+}
