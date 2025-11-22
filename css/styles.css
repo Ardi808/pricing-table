@@ -41,4 +41,57 @@ header p {
 main {
   width: 85%;
   margin: auto;
+  padding-top: 3rem;
+}
+main .rowAtas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+  '. free team popular enterprise'
+  ;
+}
+.free {
+  grid-area: free;
+  text-align: center;
+  padding-top: 1rem;
+}
+.team {
+  grid-area: team;
+  text-align: center;
+  padding-top: 1rem;
+}
+.popular {
+  grid-area: popular;
+  text-align: center;
+  background-color: var(--color-dark-bg);
+  padding-top: 1rem;
+  color: var(--color-light-bg);
+  border-radius: 10px 10px 0 0;
+}
+.enterprise {
+  grid-area: enterprise;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+main .rowAtas .blue {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+main .rowAtas .mounth {
+  color: var(--color-text-muted);
+}
+main .rowAtas .popular .mounth {
+  color: var(--color-light-bg);
+}
+main .rowAtas .popular .blue {
+  background-color: var(--color-primary);
+  color: var(--color-light-bg);
+  display: inline;
+  padding: 0 .5rem;
+  border-radius: 10px;
+}
+main .rowAtas h2 {
+  font-size: 3rem;
+  font-weight: 500;
 }
