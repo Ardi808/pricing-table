@@ -45,7 +45,7 @@ main {
 }
 main .rowAtas {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
   grid-template-areas: 
   '. free team popular enterprise'
   ;
@@ -94,4 +94,38 @@ main .rowAtas .popular .blue {
 main .rowAtas h2 {
   font-size: 3rem;
   font-weight: 500;
+}
+
+/* row bawah */
+
+main .rowBawah {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+}
+main .rowBawah h3,
+main .rowBawah p {
+  font-size: .9rem;
+}
+main .rowBawah h3 {
+  font-weight: 600;
+}
+main .rowBawah .satu h3 {
+  background-color: var(--color-muted-bg);
+  white-space: nowrap;   /* mencegah pindah baris */
+  overflow: hidden;      /* sembunyikan teks berlebih */
+  text-overflow: ellipsis; /* ubah jadi ... */
+}
+main .rowBawah .satu h3,
+main .rowBawah .dua p,
+main .rowBawah .tiga p
+ {
+  padding: .8rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+main .rowBawah .dua,
+main .rowBawah .tiga,
+main .rowBawah .empat,
+main .rowBawah .lima {
+  text-align: center ;
 }
