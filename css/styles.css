@@ -65,6 +65,7 @@ main .rowAtas {
   text-align: center;
   background-color: var(--color-dark-bg);
   padding-top: 1rem;
+  padding-bottom: 4rem;
   color: var(--color-light-bg);
   border-radius: 10px 10px 0 0;
 }
@@ -117,12 +118,17 @@ main .rowBawah .satu h3 {
 }
 main .rowBawah .satu h3,
 main .rowBawah .dua p,
-main .rowBawah .tiga p
+main .rowBawah .tiga p,
+main .rowBawah .empat p,
+main .rowBawah .lima p
  {
   padding: .8rem;
   border-bottom: 1px solid var(--color-border);
 }
-
+main .rowBawah .empat p{
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-bg);
+}
 main .rowBawah .dua,
 main .rowBawah .tiga,
 main .rowBawah .empat,
