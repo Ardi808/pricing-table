@@ -38,7 +38,7 @@
 
 ## Overview
 
-![screenshot](screenshot/Screenshot%202025-12-01%20103010.png)
+![screenshot](screenshot/Screenshot%202025-12-01%20110450.png)
 
 This is a pricing table section challenge from DevChallenges.io.  
 I built a responsive pricing UI consisting of four pricing tiers with a feature comparison table.  
