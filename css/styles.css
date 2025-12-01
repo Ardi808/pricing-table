@@ -1,29 +1,26 @@
+/* ================================
+   Root Variables (Color Palette)
+================================ */
 :root {
   /* Warna dasar */
-  --color-primary: #1E40AF;
-  /* biru utama */
-  --color-secondary: #B97730;
-  /* oranye tombol popular */
-  --color-dark-bg: #0E1225;
-  /* background kolom popular */
-  --color-light-bg: #FFFFFF;
-  /* putih umum */
-  --color-muted-bg: #F9FAFB;
-  /* latar belakang lembut */
+  --color-primary: #1E40AF;        /* biru utama */
+  --color-secondary: #B97730;      /* oranye tombol popular */
+  --color-dark-bg: #0E1225;        /* background kolom popular */
+  --color-light-bg: #FFFFFF;       /* putih umum */
+  --color-muted-bg: #F9FAFB;       /* latar belakang lembut */
 
-  /* Teks & border */
-  --color-text: #1A1A1A;
-  /* teks utama */
-  --color-text-muted: #6B7280;
-  /* teks sekunder */
-  --color-border: #E5E7EB;
-  /* garis tabel */
+  /* Teks & Border */
+  --color-text: #1A1A1A;            /* teks utama */
+  --color-text-muted: #6B7280;      /* teks sekunder */
+  --color-border: #E5E7EB;          /* garis tabel */
 
   /* Aksen */
-  --color-badge: #3B82F6;
-  /* label popular */
+  --color-badge: #3B82F6;           /* label popular */
 }
 
+/* ================================
+   Global Reset & Typography
+================================ */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +30,9 @@
   font-weight: 400;
 }
 
+/* ================================
+   Header Section
+================================ */
 header {
   margin: auto;
   padding: 2rem;
@@ -52,49 +52,50 @@ header p {
   color: var(--color-text-muted);
 }
 
+/* ================================
+   Main Content
+================================ */
 main {
   width: 85%;
   margin: auto;
   padding-top: 3rem;
 }
 
+/* ================================
+   Row Atas (Judul Paket Harga)
+================================ */
 main .rowAtas {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-template-areas:
-    '. free team popular enterprise'
-  ;
+  grid-template-areas: '. free team popular enterprise';
 }
 
-.free {
-  grid-area: free;
+/* Setiap kolom paket */
+.free,
+.team,
+.popular,
+.enterprise {
   text-align: center;
   padding-top: 1rem;
 }
 
-.team {
-  grid-area: team;
-  text-align: center;
-  padding-top: 1rem;
+.free { grid-area: free; }
+.team { grid-area: team; }
+.enterprise { 
+  grid-area: enterprise; 
+  padding-bottom: 2rem; 
 }
 
 .popular {
   grid-area: popular;
-  text-align: center;
   background-color: var(--color-dark-bg);
   padding-top: 1rem;
   padding-bottom: 1.8rem;
   color: var(--color-light-bg);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0; /* hanya atas */
 }
 
-.enterprise {
-  grid-area: enterprise;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-
+/* Warna teks */
 main .rowAtas .blue {
   color: var(--color-primary);
   font-weight: 500;
@@ -104,6 +105,7 @@ main .rowAtas .mounth {
   color: var(--color-text-muted);
 }
 
+/* Override untuk kolom popular */
 main .rowAtas .popular .mounth {
   color: var(--color-light-bg);
 }
@@ -121,8 +123,9 @@ main .rowAtas h2 {
   font-weight: 500;
 }
 
-/* row bawah */
-
+/* ================================
+   Row Bawah (Detail Fitur)
+================================ */
 main .rowBawah {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
@@ -138,16 +141,15 @@ main .rowBawah h3 {
   font-weight: 600;
 }
 
+/* Kolom pertama: Nama fitur */
 main .rowBawah .satu h3 {
   background-color: var(--color-muted-bg);
-  white-space: nowrap;
-  /* mencegah pindah baris */
-  overflow: hidden;
-  /* sembunyikan teks berlebih */
-  text-overflow: ellipsis;
-  /* ubah jadi ... */
+  white-space: nowrap;         /* cegah teks turun */
+  overflow: hidden;            /* sembunyikan teks panjang */
+  text-overflow: ellipsis;     /* beri ... bila kepanjangan */
 }
 
+/* Border untuk setiap cell */
 main .rowBawah .satu h3,
 main .rowBawah .dua p,
 main .rowBawah .tiga p,
@@ -157,11 +159,13 @@ main .rowBawah .lima p {
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Kolom Popular dibawah */
 main .rowBawah .empat p {
   background-color: var(--color-dark-bg);
   color: var(--color-light-bg);
 }
 
+/* Text center untuk kolom 2—5 */
 main .rowBawah .dua,
 main .rowBawah .tiga,
 main .rowBawah .empat,
@@ -169,6 +173,7 @@ main .rowBawah .lima {
   text-align: center;
 }
 
+/* Tombol "Get Started" */
 .rowBawah .satu .blue,
 .rowBawah .dua .blue,
 .rowBawah .tiga .blue,
@@ -178,13 +183,15 @@ main .rowBawah .lima {
   color: var(--color-primary);
 }
 
+/* Tombol khusus kolom Popular */
 .rowBawah .empat .blue {
   background-color: var(--color-secondary);
   padding: 1.5rem;
   border: none;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px; /* sudut bawah */
 }
 
+/* Rounded corners untuk kolom fitur kiri */
 .rowBawah .satu :first-child {
   border-radius: 10px 0 0 0;
 }
@@ -193,35 +200,34 @@ main .rowBawah .lima {
   border-radius: 0 0 0 10px;
 }
 
-/* responsive */
-
-/* tablet */
+/* ================================
+   Responsive: Tablet (<= 1024px)
+================================ */
 @media (max-width: 1024px) {
+
+  /* Tampilkan hanya 4 kolom */
   main .rowAtas {
     grid-template-columns: repeat(4, minmax(100px, 1fr));
-    grid-template-areas:
-      '. team popular enterprise'
+    grid-template-areas: '. team popular enterprise';
   }
 
-  .rowAtas .free {
-    display: none;
-  }
+  .rowAtas .free { display: none; }
 
   main .rowBawah {
     grid-template-columns: repeat(4, minmax(100px, 1fr));
   }
 
-  .rowBawah .dua {
-    display: none;
-  }
+  .rowBawah .dua { display: none; }
 }
 
-/* phone */
+/* ================================
+   Responsive: Phone (<= 576px)
+================================ */
 @media (max-width: 576px) {
+
   main .rowAtas {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-areas:
-      '. enterprise popular'
+    grid-template-areas: '. enterprise popular';
   }
 
   .rowAtas .free,
@@ -229,23 +235,17 @@ main .rowBawah .lima {
     display: none;
   }
 
+  /* Atur ulang grid rowBawah */
   main .rowBawah {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-areas:
-      'satu lima empat'
-    ;
+    grid-template-areas: 'satu lima empat';
   }
 
-  .rowBawah .satu {
-    grid-area: satu;
-  }
-  .rowBawah .empat {
-    grid-area: empat;
-  }
-  .rowBawah .lima {
-    grid-area: lima;
-  }
+  .rowBawah .satu { grid-area: satu; }
+  .rowBawah .empat { grid-area: empat; }
+  .rowBawah .lima { grid-area: lima; }
 
+  /* Sembunyikan dua kolom */
   .rowBawah .dua,
   .rowBawah .tiga {
     display: none;
