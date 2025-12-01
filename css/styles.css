@@ -1,19 +1,29 @@
 :root {
   /* Warna dasar */
-  --color-primary: #1E40AF;      /* biru utama */
-  --color-secondary: #B97730;    /* oranye tombol popular */
-  --color-dark-bg: #0E1225;      /* background kolom popular */
-  --color-light-bg: #FFFFFF;     /* putih umum */
-  --color-muted-bg: #F9FAFB;     /* latar belakang lembut */
+  --color-primary: #1E40AF;
+  /* biru utama */
+  --color-secondary: #B97730;
+  /* oranye tombol popular */
+  --color-dark-bg: #0E1225;
+  /* background kolom popular */
+  --color-light-bg: #FFFFFF;
+  /* putih umum */
+  --color-muted-bg: #F9FAFB;
+  /* latar belakang lembut */
 
   /* Teks & border */
-  --color-text: #1A1A1A;         /* teks utama */
-  --color-text-muted: #6B7280;   /* teks sekunder */
-  --color-border: #E5E7EB;       /* garis tabel */
+  --color-text: #1A1A1A;
+  /* teks utama */
+  --color-text-muted: #6B7280;
+  /* teks sekunder */
+  --color-border: #E5E7EB;
+  /* garis tabel */
 
   /* Aksen */
-  --color-badge: #3B82F6;        /* label popular */
+  --color-badge: #3B82F6;
+  /* label popular */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +32,7 @@
   font-family: Poppins;
   font-weight: 400;
 }
+
 header {
   margin: auto;
   padding: 2rem;
@@ -31,35 +42,42 @@ header {
   background-image: url(../resources/bg-pattern.png);
   border-bottom: 1px solid var(--color-border);
 }
+
 header h1 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 header p {
   color: var(--color-text-muted);
 }
+
 main {
   width: 85%;
   margin: auto;
   padding-top: 3rem;
 }
+
 main .rowAtas {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
-  grid-template-areas: 
-  '. free team popular enterprise'
+  grid-template-areas:
+    '. free team popular enterprise'
   ;
 }
+
 .free {
   grid-area: free;
   text-align: center;
   padding-top: 1rem;
 }
+
 .team {
   grid-area: team;
   text-align: center;
   padding-top: 1rem;
 }
+
 .popular {
   grid-area: popular;
   text-align: center;
@@ -69,22 +87,27 @@ main .rowAtas {
   color: var(--color-light-bg);
   border-radius: 10px 10px 0 0;
 }
+
 .enterprise {
   grid-area: enterprise;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
 main .rowAtas .blue {
   color: var(--color-primary);
   font-weight: 500;
 }
+
 main .rowAtas .mounth {
   color: var(--color-text-muted);
 }
+
 main .rowAtas .popular .mounth {
   color: var(--color-light-bg);
 }
+
 main .rowAtas .popular .blue {
   background-color: var(--color-primary);
   color: var(--color-light-bg);
@@ -92,6 +115,7 @@ main .rowAtas .popular .blue {
   padding: 0 .5rem;
   border-radius: 10px;
 }
+
 main .rowAtas h2 {
   font-size: 3rem;
   font-weight: 500;
@@ -102,36 +126,82 @@ main .rowAtas h2 {
 main .rowBawah {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
+  padding-bottom: 2rem;
 }
+
 main .rowBawah h3,
 main .rowBawah p {
   font-size: .9rem;
 }
+
 main .rowBawah h3 {
   font-weight: 600;
 }
+
 main .rowBawah .satu h3 {
   background-color: var(--color-muted-bg);
-  white-space: nowrap;   /* mencegah pindah baris */
-  overflow: hidden;      /* sembunyikan teks berlebih */
-  text-overflow: ellipsis; /* ubah jadi ... */
+  white-space: nowrap;
+  /* mencegah pindah baris */
+  overflow: hidden;
+  /* sembunyikan teks berlebih */
+  text-overflow: ellipsis;
+  /* ubah jadi ... */
 }
+
 main .rowBawah .satu h3,
 main .rowBawah .dua p,
 main .rowBawah .tiga p,
 main .rowBawah .empat p,
-main .rowBawah .lima p
- {
+main .rowBawah .lima p {
   padding: .8rem;
   border-bottom: 1px solid var(--color-border);
 }
-main .rowBawah .empat p{
+
+main .rowBawah .empat p {
   background-color: var(--color-dark-bg);
   color: var(--color-light-bg);
 }
+
 main .rowBawah .dua,
 main .rowBawah .tiga,
 main .rowBawah .empat,
 main .rowBawah .lima {
-  text-align: center ;
+  text-align: center;
+}
+.rowBawah .satu .blue,
+.rowBawah .dua .blue,
+.rowBawah .tiga .blue,
+.rowBawah .lima .blue {
+  padding: 1.5rem;
+  border: none;
+  color: var(--color-primary);
+}
+.rowBawah .empat .blue {
+  background-color: var(--color-secondary);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+
+/* responsive */
+
+/* tablet */
+@media (max-width: 1024px) {
+  main .rowAtas {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-areas:
+      '. team popular enterprise'
+  }
+
+  .rowAtas .free {
+    display: none;
+  }
+
+  main .rowBawah {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+
+  .rowBawah .dua {
+    display: none;
+  }
 }
