@@ -65,7 +65,7 @@ main .rowAtas {
   text-align: center;
   background-color: var(--color-dark-bg);
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.8rem;
   color: var(--color-light-bg);
   border-radius: 10px 10px 0 0;
 }
