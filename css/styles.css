@@ -147,6 +147,7 @@ main .rowBawah .satu h3 {
   text-overflow: ellipsis;
   /* ubah jadi ... */
 }
+
 main .rowBawah .satu h3,
 main .rowBawah .dua p,
 main .rowBawah .tiga p,
@@ -167,6 +168,7 @@ main .rowBawah .empat,
 main .rowBawah .lima {
   text-align: center;
 }
+
 .rowBawah .satu .blue,
 .rowBawah .dua .blue,
 .rowBawah .tiga .blue,
@@ -175,15 +177,18 @@ main .rowBawah .lima {
   border: none;
   color: var(--color-primary);
 }
+
 .rowBawah .empat .blue {
   background-color: var(--color-secondary);
   padding: 1.5rem;
   border: none;
   border-radius: 0 0 10px 10px;
 }
+
 .rowBawah .satu :first-child {
   border-radius: 10px 0 0 0;
 }
+
 .rowBawah .satu :last-child {
   border-radius: 0 0 0 10px;
 }
@@ -210,7 +215,39 @@ main .rowBawah .lima {
     display: none;
   }
 }
+
 /* phone */
 @media (max-width: 576px) {
-  
+  main .rowAtas {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-areas:
+      '. enterprise popular'
+  }
+
+  .rowAtas .free,
+  .rowAtas .team {
+    display: none;
+  }
+
+  main .rowBawah {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-areas:
+      'satu lima empat'
+    ;
+  }
+
+  .rowBawah .satu {
+    grid-area: satu;
+  }
+  .rowBawah .empat {
+    grid-area: empat;
+  }
+  .rowBawah .lima {
+    grid-area: lima;
+  }
+
+  .rowBawah .dua,
+  .rowBawah .tiga {
+    display: none;
+  }
 }
