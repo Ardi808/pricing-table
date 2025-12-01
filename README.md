@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center">Pricing Table Section | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/pricing-table-section-challenge" target="_blank">Pricing Table</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="{https://your-demo-link}">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="{https://your-solution-link}">
       Solution
     </a>
     <span> | </span>
@@ -38,47 +38,59 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](screenshot/Screenshot%202025-12-01%20103010.png)
 
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- What have you learned/improved?
-- Your wisdom? :)
--->
+This is a pricing table section challenge from DevChallenges.io.  
+I built a responsive pricing UI consisting of four pricing tiers with a feature comparison table.  
+The layout is fully responsive using CSS Grid and media queries.
 
 ### What I learned
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+While creating this project, I improved my understanding of:
+
+- Structuring UI components with **CSS Grid** for multi-column layouts.
+- Building a **feature comparison table** using grid alignment.
+- Using **CSS custom properties (variables)** for scalable theming.
+- Creating a **highlighted "Popular" plan** with distinct styling.
+- Implementing responsive behavior such as:
+  - Hiding certain columns on tablet & mobile
+  - Rearranging grid areas for small screens
+- Maintaining clean and scalable CSS architecture.
 
 ### Useful resources
 
-<!--
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
--->
+- [MDN - CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) – Helped me refine the grid layout.
+- [MDN - Custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) – Useful for managing theme variables.
+- [DevChallenges Community](https://devchallenges.io/learn) – Great reference for UI structure inspiration.
 
 ### Built with
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+- Semantic HTML5 markup  
+- CSS custom properties  
+- Flexbox  
+- CSS Grid  
+- Media Queries for responsiveness  
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+*(No frameworks used; pure HTML + CSS)*
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+This application/site was created as a submission to a  
+[DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+Features include:
+
+- Fully responsive pricing table layout
+- Highlighted “Popular” plan
+- Clean typography using Google Fonts
+- Custom color system using CSS variables
+- Mobile-friendly column re-ordering
+- Smooth table-like feature comparison layout
 
 ## Acknowledgements
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+- DevChallenges.io for the design challenge  
+- MDN Web Docs for excellent CSS & HTML resources
 
 ## Author
 
