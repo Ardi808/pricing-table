@@ -65,13 +65,13 @@ While creating this project, I improved my understanding of:
 
 ### Built with
 
-- Semantic HTML5 markup  
-- CSS custom properties  
-- Flexbox  
-- CSS Grid  
-- Media Queries for responsiveness  
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Media Queries for responsiveness
 
-*(No frameworks used; pure HTML + CSS)*
+_(No frameworks used; pure HTML + CSS)_
 
 ## Features
 
@@ -89,9 +89,9 @@ Features include:
 
 ## Acknowledgements
 
-- DevChallenges.io for the design challenge  
+- DevChallenges.io for the design challenge
 - MDN Web Docs for excellent CSS & HTML resources
 
 ## Author
 
-- GitHub [@Ardi808](https://github.com/Ardi808})
+- GitHub [@Ardi808](https://github.com/Ardi808)
