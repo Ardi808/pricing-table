@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link}">
+    <a href="{https://ardi808.github.io/pricing-table}">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-solution-link}">
+    <a href="{https://github.com/Ardi808/pricing-table}">
       Solution
     </a>
     <span> | </span>
