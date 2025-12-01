@@ -210,3 +210,7 @@ main .rowBawah .lima {
     display: none;
   }
 }
+/* phone */
+@media (max-width: 576px) {
+  
+}
